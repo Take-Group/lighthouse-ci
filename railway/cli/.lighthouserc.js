@@ -11,6 +11,7 @@ module.exports = {
         'https://zoofishing.pl',
         'https://zalukacj.io',
         'https://takelink.com',
+        'https://spinero-casino.com.se',
       ],
       settings: {
         chromeFlags: '--headless --no-sandbox --disable-dev-shm-usage',
