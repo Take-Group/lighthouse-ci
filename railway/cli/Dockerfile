@@ -5,6 +5,7 @@ ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 
 RUN apt-get update && apt-get install -y \
     chromium \
+    git \
     --no-install-recommends \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -17,5 +18,12 @@ USER lhci
 WORKDIR /home/lhci
 
 COPY --chown=lhci:lhci .lighthouserc.js .
+COPY --chown=lhci:lhci entrypoint.sh .
 
-CMD ["lhci", "autorun"]
+RUN chmod +x entrypoint.sh && \
+    git init -q && \
+    git config user.email ci@local && \
+    git config user.name ci && \
+    git commit --allow-empty -q -m init
+
+CMD ["./entrypoint.sh"]

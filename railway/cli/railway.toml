@@ -4,4 +4,4 @@ dockerfilePath = "Dockerfile"
 
 [deploy]
 cronSchedule = "0 * * * *"
-startCommand = "lhci autorun"
+startCommand = "./entrypoint.sh"
