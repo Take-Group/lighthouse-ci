@@ -14,6 +14,7 @@ module.exports = {
       ],
       settings: {
         chromeFlags: '--headless --no-sandbox --disable-dev-shm-usage',
+        chromePath: '/usr/bin/chromium',
       },
     },
     upload: {
