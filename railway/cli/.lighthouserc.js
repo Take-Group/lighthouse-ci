@@ -14,8 +14,8 @@ module.exports = {
         'https://spinero-casino.com.se',
       ],
       settings: {
-        chromeFlags: '--headless --no-sandbox --disable-dev-shm-usage',
-        chromePath: '/usr/bin/chromium',
+        chromeFlags: '--headless --no-sandbox --disable-dev-shm-usage --disable-gpu --no-zygote',
+        chromePath: '/usr/bin/google-chrome-stable',
       },
     },
     upload: {
