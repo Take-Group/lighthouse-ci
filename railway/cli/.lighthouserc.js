@@ -11,7 +11,6 @@ module.exports = {
         'https://zoofishing.pl',
         'https://zalukaj.io',
         'https://takelink.com',
-        'https://spinero-casino.com.se',
       ],
       settings: {
         chromeFlags: '--no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage --disable-accelerated-2d-canvas --no-first-run --no-zygote --disable-gpu',
