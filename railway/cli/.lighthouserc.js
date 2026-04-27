@@ -9,7 +9,7 @@ module.exports = {
         'https://silesianplace.pl',
         'https://cofashion.pl',
         'https://zoofishing.pl',
-        'https://zalukacj.io',
+        'https://zalukaj.io',
         'https://takelink.com',
         'https://spinero-casino.com.se',
       ],
